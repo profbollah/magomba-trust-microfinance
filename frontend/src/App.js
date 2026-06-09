@@ -8,6 +8,7 @@ import Groups from './pages/Groups';
 import Loans from './pages/Loans';
 import LoanDetail from './pages/LoanDetail';
 import NewLoan from './pages/NewLoan';
+import ClockPage from './pages/Clock';
 
 function App() {
   const { token } = useAuthStore();
@@ -27,6 +28,7 @@ function App() {
             <Route path="/loans" element={<Loans />} />
             <Route path="/loans/new" element={<NewLoan />} />
             <Route path="/loans/:id" element={<LoanDetail />} />
+            <Route path="/clock" element={<ClockPage />} />
             <Route path="*" element={<Navigate to="/dashboard" />} />
           </Route>
         )}

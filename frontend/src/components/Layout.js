@@ -14,7 +14,7 @@ export default function Layout() {
 
   return (
     <div className="flex h-screen bg-gray-100">
-      <div className="w-64 bg-gray-900 text-white shadow-lg">
+      <div className="w-64 bg-gray-900 text-white shadow-lg overflow-y-auto">
         <div className="p-6 border-b border-gray-700">
           <h1 className="text-2xl font-bold">Magomba Trust</h1>
           <p className="text-sm text-gray-400">Microfinance System</p>
@@ -24,9 +24,10 @@ export default function Layout() {
           <NavLink to="/dashboard" icon="📊" label="Dashboard" />
           <NavLink to="/groups" icon="👥" label="Groups" />
           <NavLink to="/loans" icon="💰" label="Loans" />
+          <NavLink to="/clock" icon="⏰" label="World Clock" />
         </nav>
 
-        <div className="absolute bottom-0 w-64 p-4 border-t border-gray-700">
+        <div className="absolute bottom-0 w-64 p-4 border-t border-gray-700 bg-gray-900">
           <div className="text-sm mb-4">
             <p className="font-semibold">{user?.name}</p>
             <p className="text-gray-400">{user?.email}</p>
